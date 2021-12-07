@@ -84,8 +84,14 @@ AvatarList.propTypes = {
       name: PropTypes.string,
       avatarUrl: PropTypes.string,
     })
-  ),
-  userCount: PropTypes.number,
+    ),
+   /**
+   * The total number of users, if a subset is passed to `users`.
+   */
+    userCount: PropTypes.number,
+   /**
+   * AvatarList comes in four sizes. In most cases, you’ll be fine with `medium`.
+   */
   size: PropTypes.oneOf(Object.keys(sizes)),
 };
 
